@@ -1,0 +1,8 @@
+.picture-placeholder {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-color: red;
+}
