@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/server-runtime";
 import stylesURL from "~/styles/gallery.css";
+import elephant from "~/assets/elephant.png";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesURL }];
@@ -7,8 +8,10 @@ export const links: LinksFunction = () => {
 
 export default function GalleryIndexRoute() {
   return (
-    <div>
-      <div className="picture-placeholder">Placeholder</div>
+    <div className="w-full">
+      <div className="picture-placeholder">
+        <img alt={"Elephant"} src={elephant} />
+      </div>
     </div>
   );
 }
